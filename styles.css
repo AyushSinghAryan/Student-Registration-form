@@ -1,0 +1,230 @@
+        body {
+            font-family: Arial, sans-serif;
+            background: rgb(161, 121, 222);
+            background: linear-gradient(90deg, rgba(161, 121, 222, 1) 0%, rgba(9, 9, 121, 1) 52%, rgba(0, 212, 255, 1) 90%);
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            background: #F3FAEC;
+            background: linear-gradient(to right, #F3FAEC 32%, #C10006 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 70%;
+            margin: 5px 0;
+        }
+
+        /* button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 2px;
+            background-color: #7E60BF;
+            color: white;
+        } */
+
+
+
+        /* CSS */
+        button {
+            align-items: center;
+            background-color: #FFFFFF;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: .25rem;
+            box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+            box-sizing: border-box;
+            color: rgba(0, 0, 0, 0.85);
+            cursor: pointer;
+            display: inline-flex;
+            font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            justify-content: center;
+            line-height: 1.25;
+            margin: 0;
+            min-height: 3rem;
+            padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+            position: relative;
+            text-decoration: none;
+            transition: all 250ms;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: baseline;
+            width: auto;
+        }
+
+        button:hover,
+        button:focus {
+            border-color: rgba(0, 0, 0, 0.15);
+            box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+            color: rgba(0, 0, 0, 0.65);
+        }
+
+        button:hover {
+            transform: translateY(-1px);
+        }
+
+        button:active {
+            background-color: #F0F0F1;
+            border-color: rgba(0, 0, 0, 0.15);
+            box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+            color: rgba(0, 0, 0, 0.65);
+            transform: translateY(0);
+        }
+
+        button {
+            margin: 0.2rem;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            max-height: 200px;
+            overflow-y: auto;
+            display: block;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #460ec0;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .styled-table {
+            border-collapse: collapse;
+            font-size: 0.9em;
+            font-family: sans-serif;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .styled-table thead tr {
+            background-color: #009879;
+            color: #ffffff;
+        }
+
+
+
+
+        .actions button {
+            margin: 0 5px;
+        }
+
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+
+        .edit-mode input {
+            width: 100%;
+            padding: 8px;
+        }
+
+        .edit-mode td {
+            padding: 0;
+        }
+
+        tbody {
+            display: block;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        tbody tr {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        thead,
+        tbody tr {
+            width: 100%;
+            display: table;
+            table-layout: fixed;
+        }
+
+
+        /* responsive  */
+        @media (max-width: 768px) {
+
+            input[type="text"],
+            input[type="email"],
+            input[type="number"] {
+                width: 90%;
+            }
+
+            table {
+                display: block;
+                overflow-x: auto;
+                font-size: 14px;
+            }
+
+            th,
+            td {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+
+            td {
+                padding: 12px;
+                overflow: hidden;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="number"] {
+                width: 100%;
+            }
+
+            th,
+            td {
+                padding: 6px;
+                font-size: 12px;
+            }
+
+            td {
+                padding: 12px;
+                /* overflow: hidden; */
+            }
+
+            button {
+                padding: 4px 6px;
+                font-size: 12px;
+            }
+
+            table {
+                font-size: 12px;
+            }
+        }
